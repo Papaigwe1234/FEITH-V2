@@ -1,16 +1,16 @@
 {
-  "name": "KERM_MD-V3",
+  "name": "FEITH-V2",
   "version": "10.8.1",
-  "description": "Kerm-MD latest multi device whatsapp bot",
+  "description": "Feith-MD latest multi device whatsapp bot",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "pm2 start index.js --deep-monitoring --attach --name Kerm-MD",
-    "stop": "pm2 stop Kerm-MD",
-    "restart": "pm2 restart Kerm-MD"
+    "start": "pm2 start index.js --deep-monitoring --attach --name Feith-MD",
+    "stop": "pm2 stop Feith-MD",
+    "restart": "pm2 restart Feith-MD"
   },
-  "keywords": ["kerm-md", "whatsapp-bot", "whatsapp md bot"],
-  "author": "Kg-Tech",
+  "keywords": ["Feith-md", "whatsapp-bot", "whatsapp md bot"],
+  "author": "Igwe-Tech",
   "license": "ISC",
   "dependencies": {
     "@ffmpeg-installer/ffmpeg": "^1.1.0",

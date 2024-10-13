@@ -11,7 +11,7 @@ const text = m.body.slice(prefix.length + cmd.length).trim();
   const validCommands = ['repo', 'sc', 'script','kerm'];
 
   if (validCommands.includes(cmd)) {
-    const repoUrl = `https://api.github.com/repos/Kgtech-cmr/KERM_MD-V3`;
+    const repoUrl = `https://api.github.com/repos/papaigwe1234/FEITH-V2`;
     
     await handleRepoCommand(m, Matrix, repoUrl);
   }
@@ -86,7 +86,7 @@ const handleRepoCommand = async (m, Matrix, repoUrl) => {
                   name: 'cta_url',
                   buttonParamsJson: JSON.stringify({
                     display_text: 'Join Our Community',
-                    url: 'https://whatsapp.com/channel/0029Vafn6hc7DAX3fzsKtn45',
+                    url: 'https://whatsapp.com/channel/0029VartOqACMY0OUI2n350j',
                   }),
                 },
               ],

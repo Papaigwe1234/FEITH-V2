@@ -70,7 +70,7 @@ async function start() {
     try {
         const { state, saveCreds } = await useMultiFileAuthState(sessionDir);
         const { version, isLatest } = await fetchLatestBaileysVersion();
-        console.log(`🤖 KERM_MD-V3 using WA v${version.join('.')}, isLatest: ${isLatest}`);
+        console.log(`🤖 FEITH_MD-V2 using WA v${version.join('.')}, isLatest: ${isLatest}`);
         
         const Matrix = makeWASocket({
             version,
@@ -83,7 +83,7 @@ async function start() {
                     const msg = await store.loadMessage(key.remoteJid, key.id);
                     return msg.message || undefined;
                 }
-                return { conversation: "Kerm_MD_V3 whatsapp user bot" };
+                return { conversation: "Feith-V2 whatsapp user bot" };
             }
         });
 
@@ -95,7 +95,7 @@ async function start() {
                 }
             } else if (connection === 'open') {
                 if (initialConnection) {
-                    console.log(chalk.green("Kerm Md V3 Is successfull connected ✅"));
+                    console.log(chalk.green("Feith Md V2 Is successfull connected ✅"));
                     Matrix.sendMessage(Matrix.user.id, { text: `KERM MD V3 IS CONNECTED\nDON'T FORGET TO JOIN CHANNEL😎` });
                     initialConnection = false;
                 } else {
